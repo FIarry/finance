@@ -28,7 +28,7 @@ h3 {
 
 .wrapper {
     min-height: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(206, 230, 199);
     color: white;
     font-family: 'Roboto', sans-serif;
     padding: 0px 10px;
@@ -43,12 +43,14 @@ h3 {
 .main {
     display: flex;
     column-gap: 10px;
+    min-height: 80%;
 }
 
 .main__column {
-    background-color: rgb(104, 104, 104);
+    background-color: rgb(133, 168, 123);
     border-radius: 10px;
     padding: 10px;
+    width: 20%;
 }
 
 .diagram-block {
@@ -76,6 +78,7 @@ h3 {
     stroke: green;
     stroke-dasharray: 100 100;
 }
+
 .unit:nth-child(2) {
     stroke: rgb(73, 129, 73);
     stroke-dasharray: 25 100;
@@ -95,7 +98,7 @@ h3 {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: rgb(36, 36, 36);
+    background-color: rgb(206, 230, 199);
     border-radius: 5px;
 }
 
@@ -113,10 +116,6 @@ h3 {
     margin-right: 10px;
 }
 
-.legend__item[data-category="product"] ::before {
-    background-color: green;
-}
-
 .purcashes {
     flex: 1;
     display: flex;
@@ -131,7 +130,7 @@ h3 {
 
 .purcashes__row {
     text-align: center;
-    background-color: rgb(36, 36, 36);
+    background-color: rgb(206, 230, 199);
 }
 
 .purcashes__row td {
@@ -140,6 +139,15 @@ h3 {
 
 .purcashes__item .purcashes__price::after,
 .legend__price::after {
+    content: " \20BD";
+}
+
+.finalPrice {
+    width: 100%;
+    text-align: center;
+}
+
+.finalPrice::after {
     content: " \20BD";
 }
 
@@ -198,7 +206,7 @@ h3 {
 }
 
 .btn {
-    background: rgb(36, 36, 36);
+    background: rgb(206, 230, 199);
     color: white;
     padding: 10px 20px;
     border: none;
@@ -206,6 +214,6 @@ h3 {
 }
 
 .btn:hover {
-    background: rgb(58, 58, 58);
+    background: rgb(98, 119, 92);
     cursor: pointer;
 }

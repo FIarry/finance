@@ -21,18 +21,17 @@
         </header>
         <div class="main">
             <div class="main__column main__result">
-                <div class="diagram-block">
+                <div class="finalPrice" id="finalPrice">0</div>
+                <!-- <div class="diagram-block">
                     <h2 class="diagram-title">Диаграмма расходов</h2>
                     <div class="canvas">
                         <div class="canvas">
                             <svg class="chart" width="300" height="300" viewBox="0 0 50 50">
                                 <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
-                                <!-- <circle class="unit" r="15.9" cx="50%" cy="50%"></circle> -->
                             </svg>
                         </div>
-
                     </div>
-                </div>
+                </div> -->
                 <div class="legend">
                     <ul class="legend__list">
                         <!-- <li class="legend__item" data-category="product">
@@ -65,11 +64,13 @@
                     </div>
                     <div class="editor__form-row">
                         <p class="editor__form-input-name">Цена:</p>
-                        <input type="text" class="editor__form-input" id="pPrice" name="price" placeholder="0" autocomplete="off">
+                        <input type="text" class="editor__form-input" id="pPrice" name="price" placeholder="0"
+                            autocomplete="off">
                     </div>
                     <div class="editor__form-row">
                         <p class="editor__form-input-name">Категория:</p>
-                        <input type="text" class="editor__form-input" id="selectCategory" name="select-category" placeholder="Тип Товара" autocomplete="off">
+                        <input type="text" class="editor__form-input" id="selectCategory" name="select-category"
+                            placeholder="Тип Товара" autocomplete="off">
                     </div>
                     <div class="editor__form-row">
                         <button class="btn" name="addBtn" id="addBtn">Добавить</button>
